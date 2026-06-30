@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: lightgoldenrodyellow;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid #ddd;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo i{
+    color: green;
+    font-size: 28px;
+}
+.logo h1{
+    color: green;
+}
+nav{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+nav a:hover{
+    color: green;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.icons i{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.iconcart{
+    position: relative;
+
+}
+.iconcart span{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+body{
+    background:#f5f5f5;
+    padding:30px;
+}
+
+.container{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    margin-top: 70px;
+    gap:40px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px black;
+}
+
+.contact-info{
+    flex:1; padding: 60px;
+}
+
+.contact-info h2{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.contact-info p{
+    color:#666;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.info{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    margin-bottom:20px;
+    color:#444;
+}
+
+.info i{
+    color: green;
+    font-size: 28px;
+    font-size:18px;
+    margin-top:3px;
+}
+
+.contact-form{
+    flex:1;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    outline:none;
+}
+
+.contact-form textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    background: green;
+    font-size: 28px;;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background: green;
+    font-size: 28px;
+}
+
+.map{
+    max-width:900px;
+    margin:20px auto;
+}
+
+.map iframe{
+    width:50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius:10px;
+}
+    </style>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <i class="fa-solid fa-basket-shopping"></i>
+            <h1>FreshCart</h1>
+
+    </div>
+    <div class="icons">
+    <nav>
+        <a href="">Home</a>
+        <a href="product.html">Products</a>
+        <a href="">Catogries</a>
+        <a href="aboutpage.html">About Us</a>
+        <a href="">Contact</a>
+         </nav>
+         <div class="iconsear"><i class="fa-solid fa-magnifying-glass-minus"></i></div>
+         <div class="iconcart">
+         <i class="fa-solid fa-cart-arrow-down"></i>
+            <span>1</span>
+         </div>
+    </div>
+   
+   </header>
+
+
+    <div class="container">
+
+        
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+
+            <p>We'd love to hear from you!</p>
+                <p> Reach out to us for any queries or support.</p>
+
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <span>+91 98765 43210</span>
+            </div>
+
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <span>support@freshcart.com</span>
+            </div>
+
+            <div class="info">
+                <i class="fas fa-location-dot"></i>
+                <span>123, Green Street,<br>Healthy City, India - 560001</span>
+            </div>
+        </div>
+
+        
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Your Name">
+
+                <input type="email" placeholder="Your Email">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.5718916188416!2d78.54245907421173!3d17.480192900126863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b75176442a7%3A0x419644202a47c1e!2s38-15%2F31%2F18%2C%20Road%20No.%202%2C%20Rohini%20Colony%2C%20Radhakrishna%20Nagar%2C%20Dr.%20A.%20S.%20Rao%20Nagar%2C%20Secunderabad%2C%20Telangana%20500094!5e0!3m2!1sen!2sin!4v1781681644316!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

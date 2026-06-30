@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 80px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i{
+
+    color: green;
+    font-size: 28px;
+}
+
+.logo h1{
+    color: green;
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+
+nav a:hover
+{
+    color: blue;
+
+}
+
+
+.icons
+{
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.icons i{
+    
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.Cart
+{
+    position: relative;
+}
+
+.Cart span{
+
+    position: absolute;
+
+    top: -8px;
+    right: -10px;
+
+
+
+    width: 18px;
+
+    height:18px ;
+
+    background-color: green;
+
+    color: white;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}   
+  .productunderline{
+     color: green;
+  }
+  
+  
+  .main8div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;}
+
+
+.main8div img{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;    
+   
+}
+
+
+p{ text-align: end;
+
+}
+
+.banana{
+    border-style: groove; border-color: rgba(255, 255, 255, 0.293);padding: 12px;  display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+
+.all{ display: flex; 
+    gap: 30px;
+    padding: 20px 80px;
+    align-items: flex-start; button{
+        width: 150px;
+    }
+}
+
+.cat{
+    width: 250px;
+    
+}
+
+.allproducts{
+    flex: 2;
+}
+.all h3:hover{
+    color: green;
+}
+
+
+
+   
+
+.banana button{
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+    </style>
+    <link rel="stylesheet" href="mamprojectproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>
+            <i class="fa-solid fa-cart-shopping"></i>FreshCart</h1>
+        </div>
+       <nav>
+        <a href="">Home</a>
+        <a  class="productunderline" href="">Products</a>
+        <a href="">Categories</a>
+        <a href="">About Us</a>
+        <a href="">Contact</a>
+       </nav>
+       <div class="icons">
+
+
+        <i class="fa-solid fa-magnifying-glass-minus"></i>
+        <div class="Cart">
+
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>1</span>
+        </div>
+       
+       </div>
+         </header>
+  
+  <div class="all">
+    <div class="cat">
+        <h2>Categories</h2><br><br>  
+        <h3 class="p" >All products</h3><br><br>
+        <h3>Fruits</h3><br><br>
+        <h3>Vegetables</h3><br><br>
+        <h3>Dairy</h3><br><br>
+        <h3>Beverages</h3><br><br>
+        <h3>Snacks</h3><br><br>
+        <h3>Personal care </h3><br><br>
+        <h3>Filter by price </h3><br>
+        <input type="range">0 to 500 <br> <br>
+        <button>Apply </button>
+    </div>
+
+    
+    <div class="allproducts">
+
+       <h1>All products </h1>
+       <p><button>SortBy<select> 
+        <option>Feature </option>
+            <option>"low to high"</option>
+            <option>"high to low"</option>
+
+       </select></button></p>
+        <div class="main8div">
+
+             <div class="banana">
+       <img src="https://www.freeiconspng.com/uploads/download-apples-png-image-red-apple-fruit-10.png" alt="">
+        <h4>Apple</h4>
+        <h4>₹120/kg</h5>
+        <button>Add to cart</button>
+            </div>
+
+
+        <div class="banana">
+        <img src="https://static.vecteezy.com/system/resources/previews/033/495/069/non_2x/banana-fruit-isolated-png.png" alt="">
+        <h4>Banana</h4>
+        <h4>₹60/ dozen</h4>
+        <button>Add to cart</button>
+        </div>
+
+        <div class="banana">
+        <img src="https://4.imimg.com/data4/OD/YT/MY-29307660/organic-cow-milk-500x500.jpg" alt="">
+        <h4>Milk</h4>
+        <h4>₹60/lit</h4>
+        <button>Add to cart</button>
+        </div>
+
+        <div class="banana">
+        <img src="https://borates.today/wp-content/uploads/2022/07/Tomato-plants.jpg" alt="">
+        <h4>Tomato</h4>
+        <h4>₹40/kg</h4>
+        <button>Add to cart</button>
+        </div>
+
+        <div class="banana">
+        <img src="https://cdn.pixabay.com/photo/2013/09/06/16/00/potatoes-179471_1280.jpg" alt="">
+        <h4>Potato</h4>
+        <h4>₹30/kg</h4>
+        <button>Add to cart</button>
+        </div>
+
+        <div class="banana">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/11/361783446/RJ/UT/FO/20840580/onion-1000x1000.png" alt="">
+        <h4>Onion</h4>
+        <h4>₹25/kg</h4>
+        <button>Add to cart</button>
+        </div>
+
+        <div class="banana">
+        <img src="https://c8.alamy.com/comp/2HP77B5/rice-grains-in-basket-against-white-background-2HP77B5.jpg" alt="">
+        <h4>rice</h4>
+        <h4>₹60/kg</h4>
+        <button>Add to cart</button>
+        </div>
+
+                 <div class="banana">
+        <img src="https://img.tradekey.com/p-296218-20060814115400/cooking-oil-refined-vegetable-oil.jpg" alt="">
+        <h4>cooking oil</h4>
+        <h4>₹180/lit</h4>
+        <button>Add to cart</button>
+                 </div>
+     </div>      
+        </div>
+     
+        </div>
+    </body>
+</html>
